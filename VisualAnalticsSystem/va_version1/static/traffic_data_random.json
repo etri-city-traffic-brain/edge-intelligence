@@ -1,0 +1,3026 @@
+[
+	{
+		"from": "신사역",
+		"to": "을지병원사거리",
+		"traffic": [
+			{
+				"time": 0,
+				"volume": 16,
+				"avs": 24
+			},
+			{
+				"time": 1,
+				"volume": 14,
+				"avs": 26
+			},
+			{
+				"time": 2,
+				"volume": 28,
+				"avs": 12
+			},
+			{
+				"time": 3,
+				"volume": 29,
+				"avs": 11
+			},
+			{
+				"time": 4,
+				"volume": 23,
+				"avs": 17
+			},
+			{
+				"time": 5,
+				"volume": 23,
+				"avs": 17
+			},
+			{
+				"time": 6,
+				"volume": 17,
+				"avs": 23
+			},
+			{
+				"time": 7,
+				"volume": 27,
+				"avs": 13
+			},
+			{
+				"time": 8,
+				"volume": 14,
+				"avs": 26
+			},
+			{
+				"time": 9,
+				"volume": 5,
+				"avs": 35
+			},
+			{
+				"time": 10,
+				"volume": 24,
+				"avs": 16
+			},
+			{
+				"time": 11,
+				"volume": 16,
+				"avs": 24
+			},
+			{
+				"time": 12,
+				"volume": 16,
+				"avs": 24
+			},
+			{
+				"time": 13,
+				"volume": 16,
+				"avs": 24
+			},
+			{
+				"time": 14,
+				"volume": 24,
+				"avs": 16
+			},
+			{
+				"time": 15,
+				"volume": 11,
+				"avs": 29
+			},
+			{
+				"time": 16,
+				"volume": 14,
+				"avs": 26
+			},
+			{
+				"time": 17,
+				"volume": 8,
+				"avs": 32
+			},
+			{
+				"time": 18,
+				"volume": 9,
+				"avs": 31
+			},
+			{
+				"time": 19,
+				"volume": 15,
+				"avs": 25
+			},
+			{
+				"time": 20,
+				"volume": 27,
+				"avs": 13
+			},
+			{
+				"time": 21,
+				"volume": 13,
+				"avs": 27
+			},
+			{
+				"time": 22,
+				"volume": 17,
+				"avs": 23
+			},
+			{
+				"time": 23,
+				"volume": 29,
+				"avs": 11
+			}
+		]
+	},
+	{
+		"from": "신사역",
+		"to": "논현역",
+		"traffic": [
+			{
+				"time": 0,
+				"volume": 13,
+				"avs": 27
+			},
+			{
+				"time": 1,
+				"volume": 14,
+				"avs": 26
+			},
+			{
+				"time": 2,
+				"volume": 12,
+				"avs": 28
+			},
+			{
+				"time": 3,
+				"volume": 8,
+				"avs": 32
+			},
+			{
+				"time": 4,
+				"volume": 11,
+				"avs": 29
+			},
+			{
+				"time": 5,
+				"volume": 6,
+				"avs": 34
+			},
+			{
+				"time": 6,
+				"volume": 16,
+				"avs": 24
+			},
+			{
+				"time": 7,
+				"volume": 22,
+				"avs": 18
+			},
+			{
+				"time": 8,
+				"volume": 19,
+				"avs": 21
+			},
+			{
+				"time": 9,
+				"volume": 23,
+				"avs": 17
+			},
+			{
+				"time": 10,
+				"volume": 14,
+				"avs": 26
+			},
+			{
+				"time": 11,
+				"volume": 7,
+				"avs": 33
+			},
+			{
+				"time": 12,
+				"volume": 14,
+				"avs": 26
+			},
+			{
+				"time": 13,
+				"volume": 13,
+				"avs": 27
+			},
+			{
+				"time": 14,
+				"volume": 16,
+				"avs": 24
+			},
+			{
+				"time": 15,
+				"volume": 22,
+				"avs": 18
+			},
+			{
+				"time": 16,
+				"volume": 7,
+				"avs": 33
+			},
+			{
+				"time": 17,
+				"volume": 14,
+				"avs": 26
+			},
+			{
+				"time": 18,
+				"volume": 19,
+				"avs": 21
+			},
+			{
+				"time": 19,
+				"volume": 25,
+				"avs": 15
+			},
+			{
+				"time": 20,
+				"volume": 20,
+				"avs": 20
+			},
+			{
+				"time": 21,
+				"volume": 8,
+				"avs": 32
+			},
+			{
+				"time": 22,
+				"volume": 17,
+				"avs": 23
+			},
+			{
+				"time": 23,
+				"volume": 22,
+				"avs": 18
+			}
+		]
+	},
+	{
+		"from": "을지병원사거리",
+		"to": "신사역",
+		"traffic": [
+			{
+				"time": 0,
+				"volume": 15,
+				"avs": 25
+			},
+			{
+				"time": 1,
+				"volume": 13,
+				"avs": 27
+			},
+			{
+				"time": 2,
+				"volume": 29,
+				"avs": 11
+			},
+			{
+				"time": 3,
+				"volume": 18,
+				"avs": 22
+			},
+			{
+				"time": 4,
+				"volume": 13,
+				"avs": 27
+			},
+			{
+				"time": 5,
+				"volume": 27,
+				"avs": 13
+			},
+			{
+				"time": 6,
+				"volume": 22,
+				"avs": 18
+			},
+			{
+				"time": 7,
+				"volume": 12,
+				"avs": 28
+			},
+			{
+				"time": 8,
+				"volume": 25,
+				"avs": 15
+			},
+			{
+				"time": 9,
+				"volume": 11,
+				"avs": 29
+			},
+			{
+				"time": 10,
+				"volume": 5,
+				"avs": 35
+			},
+			{
+				"time": 11,
+				"volume": 10,
+				"avs": 30
+			},
+			{
+				"time": 12,
+				"volume": 9,
+				"avs": 31
+			},
+			{
+				"time": 13,
+				"volume": 28,
+				"avs": 12
+			},
+			{
+				"time": 14,
+				"volume": 22,
+				"avs": 18
+			},
+			{
+				"time": 15,
+				"volume": 10,
+				"avs": 30
+			},
+			{
+				"time": 16,
+				"volume": 18,
+				"avs": 22
+			},
+			{
+				"time": 17,
+				"volume": 25,
+				"avs": 15
+			},
+			{
+				"time": 18,
+				"volume": 25,
+				"avs": 15
+			},
+			{
+				"time": 19,
+				"volume": 7,
+				"avs": 33
+			},
+			{
+				"time": 20,
+				"volume": 21,
+				"avs": 19
+			},
+			{
+				"time": 21,
+				"volume": 29,
+				"avs": 11
+			},
+			{
+				"time": 22,
+				"volume": 6,
+				"avs": 34
+			},
+			{
+				"time": 23,
+				"volume": 20,
+				"avs": 20
+			}
+		]
+	},
+	{
+		"from": "을지병원사거리",
+		"to": "학동사거리",
+		"traffic": [
+			{
+				"time": 0,
+				"volume": 7,
+				"avs": 33
+			},
+			{
+				"time": 1,
+				"volume": 22,
+				"avs": 18
+			},
+			{
+				"time": 2,
+				"volume": 29,
+				"avs": 11
+			},
+			{
+				"time": 3,
+				"volume": 12,
+				"avs": 28
+			},
+			{
+				"time": 4,
+				"volume": 29,
+				"avs": 11
+			},
+			{
+				"time": 5,
+				"volume": 22,
+				"avs": 18
+			},
+			{
+				"time": 6,
+				"volume": 22,
+				"avs": 18
+			},
+			{
+				"time": 7,
+				"volume": 11,
+				"avs": 29
+			},
+			{
+				"time": 8,
+				"volume": 9,
+				"avs": 31
+			},
+			{
+				"time": 9,
+				"volume": 26,
+				"avs": 14
+			},
+			{
+				"time": 10,
+				"volume": 8,
+				"avs": 32
+			},
+			{
+				"time": 11,
+				"volume": 6,
+				"avs": 34
+			},
+			{
+				"time": 12,
+				"volume": 28,
+				"avs": 12
+			},
+			{
+				"time": 13,
+				"volume": 19,
+				"avs": 21
+			},
+			{
+				"time": 14,
+				"volume": 18,
+				"avs": 22
+			},
+			{
+				"time": 15,
+				"volume": 9,
+				"avs": 31
+			},
+			{
+				"time": 16,
+				"volume": 11,
+				"avs": 29
+			},
+			{
+				"time": 17,
+				"volume": 9,
+				"avs": 31
+			},
+			{
+				"time": 18,
+				"volume": 8,
+				"avs": 32
+			},
+			{
+				"time": 19,
+				"volume": 9,
+				"avs": 31
+			},
+			{
+				"time": 20,
+				"volume": 27,
+				"avs": 13
+			},
+			{
+				"time": 21,
+				"volume": 6,
+				"avs": 34
+			},
+			{
+				"time": 22,
+				"volume": 18,
+				"avs": 22
+			},
+			{
+				"time": 23,
+				"volume": 23,
+				"avs": 17
+			}
+		]
+	},
+	{
+		"from": "을지병원사거리",
+		"to": "학동역",
+		"traffic": [
+			{
+				"time": 0,
+				"volume": 14,
+				"avs": 26
+			},
+			{
+				"time": 1,
+				"volume": 22,
+				"avs": 18
+			},
+			{
+				"time": 2,
+				"volume": 26,
+				"avs": 14
+			},
+			{
+				"time": 3,
+				"volume": 24,
+				"avs": 16
+			},
+			{
+				"time": 4,
+				"volume": 22,
+				"avs": 18
+			},
+			{
+				"time": 5,
+				"volume": 27,
+				"avs": 13
+			},
+			{
+				"time": 6,
+				"volume": 27,
+				"avs": 13
+			},
+			{
+				"time": 7,
+				"volume": 6,
+				"avs": 34
+			},
+			{
+				"time": 8,
+				"volume": 24,
+				"avs": 16
+			},
+			{
+				"time": 9,
+				"volume": 20,
+				"avs": 20
+			},
+			{
+				"time": 10,
+				"volume": 19,
+				"avs": 21
+			},
+			{
+				"time": 11,
+				"volume": 12,
+				"avs": 28
+			},
+			{
+				"time": 12,
+				"volume": 28,
+				"avs": 12
+			},
+			{
+				"time": 13,
+				"volume": 7,
+				"avs": 33
+			},
+			{
+				"time": 14,
+				"volume": 21,
+				"avs": 19
+			},
+			{
+				"time": 15,
+				"volume": 23,
+				"avs": 17
+			},
+			{
+				"time": 16,
+				"volume": 8,
+				"avs": 32
+			},
+			{
+				"time": 17,
+				"volume": 20,
+				"avs": 20
+			},
+			{
+				"time": 18,
+				"volume": 25,
+				"avs": 15
+			},
+			{
+				"time": 19,
+				"volume": 6,
+				"avs": 34
+			},
+			{
+				"time": 20,
+				"volume": 24,
+				"avs": 16
+			},
+			{
+				"time": 21,
+				"volume": 21,
+				"avs": 19
+			},
+			{
+				"time": 22,
+				"volume": 9,
+				"avs": 31
+			},
+			{
+				"time": 23,
+				"volume": 24,
+				"avs": 16
+			}
+		]
+	},
+	{
+		"from": "학동사거리",
+		"to": "을지병원사거리",
+		"traffic": [
+			{
+				"time": 0,
+				"volume": 18,
+				"avs": 22
+			},
+			{
+				"time": 1,
+				"volume": 8,
+				"avs": 32
+			},
+			{
+				"time": 2,
+				"volume": 14,
+				"avs": 26
+			},
+			{
+				"time": 3,
+				"volume": 15,
+				"avs": 25
+			},
+			{
+				"time": 4,
+				"volume": 9,
+				"avs": 31
+			},
+			{
+				"time": 5,
+				"volume": 11,
+				"avs": 29
+			},
+			{
+				"time": 6,
+				"volume": 24,
+				"avs": 16
+			},
+			{
+				"time": 7,
+				"volume": 15,
+				"avs": 25
+			},
+			{
+				"time": 8,
+				"volume": 7,
+				"avs": 33
+			},
+			{
+				"time": 9,
+				"volume": 19,
+				"avs": 21
+			},
+			{
+				"time": 10,
+				"volume": 12,
+				"avs": 28
+			},
+			{
+				"time": 11,
+				"volume": 17,
+				"avs": 23
+			},
+			{
+				"time": 12,
+				"volume": 15,
+				"avs": 25
+			},
+			{
+				"time": 13,
+				"volume": 16,
+				"avs": 24
+			},
+			{
+				"time": 14,
+				"volume": 22,
+				"avs": 18
+			},
+			{
+				"time": 15,
+				"volume": 26,
+				"avs": 14
+			},
+			{
+				"time": 16,
+				"volume": 28,
+				"avs": 12
+			},
+			{
+				"time": 17,
+				"volume": 26,
+				"avs": 14
+			},
+			{
+				"time": 18,
+				"volume": 21,
+				"avs": 19
+			},
+			{
+				"time": 19,
+				"volume": 29,
+				"avs": 11
+			},
+			{
+				"time": 20,
+				"volume": 24,
+				"avs": 16
+			},
+			{
+				"time": 21,
+				"volume": 17,
+				"avs": 23
+			},
+			{
+				"time": 22,
+				"volume": 14,
+				"avs": 26
+			},
+			{
+				"time": 23,
+				"volume": 16,
+				"avs": 24
+			}
+		]
+	},
+	{
+		"from": "학동사거리",
+		"to": "강남구청역",
+		"traffic": [
+			{
+				"time": 0,
+				"volume": 7,
+				"avs": 33
+			},
+			{
+				"time": 1,
+				"volume": 21,
+				"avs": 19
+			},
+			{
+				"time": 2,
+				"volume": 23,
+				"avs": 17
+			},
+			{
+				"time": 3,
+				"volume": 29,
+				"avs": 11
+			},
+			{
+				"time": 4,
+				"volume": 26,
+				"avs": 14
+			},
+			{
+				"time": 5,
+				"volume": 19,
+				"avs": 21
+			},
+			{
+				"time": 6,
+				"volume": 23,
+				"avs": 17
+			},
+			{
+				"time": 7,
+				"volume": 27,
+				"avs": 13
+			},
+			{
+				"time": 8,
+				"volume": 16,
+				"avs": 24
+			},
+			{
+				"time": 9,
+				"volume": 22,
+				"avs": 18
+			},
+			{
+				"time": 10,
+				"volume": 25,
+				"avs": 15
+			},
+			{
+				"time": 11,
+				"volume": 27,
+				"avs": 13
+			},
+			{
+				"time": 12,
+				"volume": 13,
+				"avs": 27
+			},
+			{
+				"time": 13,
+				"volume": 7,
+				"avs": 33
+			},
+			{
+				"time": 14,
+				"volume": 27,
+				"avs": 13
+			},
+			{
+				"time": 15,
+				"volume": 28,
+				"avs": 12
+			},
+			{
+				"time": 16,
+				"volume": 10,
+				"avs": 30
+			},
+			{
+				"time": 17,
+				"volume": 16,
+				"avs": 24
+			},
+			{
+				"time": 18,
+				"volume": 28,
+				"avs": 12
+			},
+			{
+				"time": 19,
+				"volume": 27,
+				"avs": 13
+			},
+			{
+				"time": 20,
+				"volume": 25,
+				"avs": 15
+			},
+			{
+				"time": 21,
+				"volume": 29,
+				"avs": 11
+			},
+			{
+				"time": 22,
+				"volume": 19,
+				"avs": 21
+			},
+			{
+				"time": 23,
+				"volume": 25,
+				"avs": 15
+			}
+		]
+	},
+	{
+		"from": "강남구청역",
+		"to": "학동사거리",
+		"traffic": [
+			{
+				"time": 0,
+				"volume": 26,
+				"avs": 14
+			},
+			{
+				"time": 1,
+				"volume": 5,
+				"avs": 35
+			},
+			{
+				"time": 2,
+				"volume": 14,
+				"avs": 26
+			},
+			{
+				"time": 3,
+				"volume": 12,
+				"avs": 28
+			},
+			{
+				"time": 4,
+				"volume": 11,
+				"avs": 29
+			},
+			{
+				"time": 5,
+				"volume": 6,
+				"avs": 34
+			},
+			{
+				"time": 6,
+				"volume": 5,
+				"avs": 35
+			},
+			{
+				"time": 7,
+				"volume": 23,
+				"avs": 17
+			},
+			{
+				"time": 8,
+				"volume": 6,
+				"avs": 34
+			},
+			{
+				"time": 9,
+				"volume": 16,
+				"avs": 24
+			},
+			{
+				"time": 10,
+				"volume": 12,
+				"avs": 28
+			},
+			{
+				"time": 11,
+				"volume": 14,
+				"avs": 26
+			},
+			{
+				"time": 12,
+				"volume": 6,
+				"avs": 34
+			},
+			{
+				"time": 13,
+				"volume": 24,
+				"avs": 16
+			},
+			{
+				"time": 14,
+				"volume": 24,
+				"avs": 16
+			},
+			{
+				"time": 15,
+				"volume": 14,
+				"avs": 26
+			},
+			{
+				"time": 16,
+				"volume": 25,
+				"avs": 15
+			},
+			{
+				"time": 17,
+				"volume": 27,
+				"avs": 13
+			},
+			{
+				"time": 18,
+				"volume": 9,
+				"avs": 31
+			},
+			{
+				"time": 19,
+				"volume": 20,
+				"avs": 20
+			},
+			{
+				"time": 20,
+				"volume": 15,
+				"avs": 25
+			},
+			{
+				"time": 21,
+				"volume": 19,
+				"avs": 21
+			},
+			{
+				"time": 22,
+				"volume": 29,
+				"avs": 11
+			},
+			{
+				"time": 23,
+				"volume": 7,
+				"avs": 33
+			}
+		]
+	},
+	{
+		"from": "강남구청역",
+		"to": "선정릉역",
+		"traffic": [
+			{
+				"time": 0,
+				"volume": 16,
+				"avs": 24
+			},
+			{
+				"time": 1,
+				"volume": 21,
+				"avs": 19
+			},
+			{
+				"time": 2,
+				"volume": 26,
+				"avs": 14
+			},
+			{
+				"time": 3,
+				"volume": 19,
+				"avs": 21
+			},
+			{
+				"time": 4,
+				"volume": 26,
+				"avs": 14
+			},
+			{
+				"time": 5,
+				"volume": 27,
+				"avs": 13
+			},
+			{
+				"time": 6,
+				"volume": 16,
+				"avs": 24
+			},
+			{
+				"time": 7,
+				"volume": 19,
+				"avs": 21
+			},
+			{
+				"time": 8,
+				"volume": 6,
+				"avs": 34
+			},
+			{
+				"time": 9,
+				"volume": 28,
+				"avs": 12
+			},
+			{
+				"time": 10,
+				"volume": 8,
+				"avs": 32
+			},
+			{
+				"time": 11,
+				"volume": 26,
+				"avs": 14
+			},
+			{
+				"time": 12,
+				"volume": 14,
+				"avs": 26
+			},
+			{
+				"time": 13,
+				"volume": 14,
+				"avs": 26
+			},
+			{
+				"time": 14,
+				"volume": 20,
+				"avs": 20
+			},
+			{
+				"time": 15,
+				"volume": 20,
+				"avs": 20
+			},
+			{
+				"time": 16,
+				"volume": 16,
+				"avs": 24
+			},
+			{
+				"time": 17,
+				"volume": 13,
+				"avs": 27
+			},
+			{
+				"time": 18,
+				"volume": 11,
+				"avs": 29
+			},
+			{
+				"time": 19,
+				"volume": 10,
+				"avs": 30
+			},
+			{
+				"time": 20,
+				"volume": 17,
+				"avs": 23
+			},
+			{
+				"time": 21,
+				"volume": 22,
+				"avs": 18
+			},
+			{
+				"time": 22,
+				"volume": 25,
+				"avs": 15
+			},
+			{
+				"time": 23,
+				"volume": 14,
+				"avs": 26
+			}
+		]
+	},
+	{
+		"from": "강남구청역",
+		"to": "학동역",
+		"traffic": [
+			{
+				"time": 0,
+				"volume": 19,
+				"avs": 21
+			},
+			{
+				"time": 1,
+				"volume": 27,
+				"avs": 13
+			},
+			{
+				"time": 2,
+				"volume": 5,
+				"avs": 35
+			},
+			{
+				"time": 3,
+				"volume": 10,
+				"avs": 30
+			},
+			{
+				"time": 4,
+				"volume": 8,
+				"avs": 32
+			},
+			{
+				"time": 5,
+				"volume": 26,
+				"avs": 14
+			},
+			{
+				"time": 6,
+				"volume": 21,
+				"avs": 19
+			},
+			{
+				"time": 7,
+				"volume": 5,
+				"avs": 35
+			},
+			{
+				"time": 8,
+				"volume": 21,
+				"avs": 19
+			},
+			{
+				"time": 9,
+				"volume": 21,
+				"avs": 19
+			},
+			{
+				"time": 10,
+				"volume": 12,
+				"avs": 28
+			},
+			{
+				"time": 11,
+				"volume": 15,
+				"avs": 25
+			},
+			{
+				"time": 12,
+				"volume": 11,
+				"avs": 29
+			},
+			{
+				"time": 13,
+				"volume": 15,
+				"avs": 25
+			},
+			{
+				"time": 14,
+				"volume": 29,
+				"avs": 11
+			},
+			{
+				"time": 15,
+				"volume": 7,
+				"avs": 33
+			},
+			{
+				"time": 16,
+				"volume": 6,
+				"avs": 34
+			},
+			{
+				"time": 17,
+				"volume": 11,
+				"avs": 29
+			},
+			{
+				"time": 18,
+				"volume": 28,
+				"avs": 12
+			},
+			{
+				"time": 19,
+				"volume": 25,
+				"avs": 15
+			},
+			{
+				"time": 20,
+				"volume": 21,
+				"avs": 19
+			},
+			{
+				"time": 21,
+				"volume": 7,
+				"avs": 33
+			},
+			{
+				"time": 22,
+				"volume": 20,
+				"avs": 20
+			},
+			{
+				"time": 23,
+				"volume": 24,
+				"avs": 16
+			}
+		]
+	},
+	{
+		"from": "선정릉역",
+		"to": "강남구청역",
+		"traffic": [
+			{
+				"time": 0,
+				"volume": 22,
+				"avs": 18
+			},
+			{
+				"time": 1,
+				"volume": 14,
+				"avs": 26
+			},
+			{
+				"time": 2,
+				"volume": 28,
+				"avs": 12
+			},
+			{
+				"time": 3,
+				"volume": 23,
+				"avs": 17
+			},
+			{
+				"time": 4,
+				"volume": 21,
+				"avs": 19
+			},
+			{
+				"time": 5,
+				"volume": 28,
+				"avs": 12
+			},
+			{
+				"time": 6,
+				"volume": 21,
+				"avs": 19
+			},
+			{
+				"time": 7,
+				"volume": 29,
+				"avs": 11
+			},
+			{
+				"time": 8,
+				"volume": 22,
+				"avs": 18
+			},
+			{
+				"time": 9,
+				"volume": 19,
+				"avs": 21
+			},
+			{
+				"time": 10,
+				"volume": 11,
+				"avs": 29
+			},
+			{
+				"time": 11,
+				"volume": 14,
+				"avs": 26
+			},
+			{
+				"time": 12,
+				"volume": 11,
+				"avs": 29
+			},
+			{
+				"time": 13,
+				"volume": 19,
+				"avs": 21
+			},
+			{
+				"time": 14,
+				"volume": 24,
+				"avs": 16
+			},
+			{
+				"time": 15,
+				"volume": 6,
+				"avs": 34
+			},
+			{
+				"time": 16,
+				"volume": 8,
+				"avs": 32
+			},
+			{
+				"time": 17,
+				"volume": 14,
+				"avs": 26
+			},
+			{
+				"time": 18,
+				"volume": 15,
+				"avs": 25
+			},
+			{
+				"time": 19,
+				"volume": 25,
+				"avs": 15
+			},
+			{
+				"time": 20,
+				"volume": 28,
+				"avs": 12
+			},
+			{
+				"time": 21,
+				"volume": 10,
+				"avs": 30
+			},
+			{
+				"time": 22,
+				"volume": 10,
+				"avs": 30
+			},
+			{
+				"time": 23,
+				"volume": 6,
+				"avs": 34
+			}
+		]
+	},
+	{
+		"from": "선정릉역",
+		"to": "언주역",
+		"traffic": [
+			{
+				"time": 0,
+				"volume": 29,
+				"avs": 11
+			},
+			{
+				"time": 1,
+				"volume": 5,
+				"avs": 35
+			},
+			{
+				"time": 2,
+				"volume": 26,
+				"avs": 14
+			},
+			{
+				"time": 3,
+				"volume": 15,
+				"avs": 25
+			},
+			{
+				"time": 4,
+				"volume": 17,
+				"avs": 23
+			},
+			{
+				"time": 5,
+				"volume": 12,
+				"avs": 28
+			},
+			{
+				"time": 6,
+				"volume": 10,
+				"avs": 30
+			},
+			{
+				"time": 7,
+				"volume": 22,
+				"avs": 18
+			},
+			{
+				"time": 8,
+				"volume": 13,
+				"avs": 27
+			},
+			{
+				"time": 9,
+				"volume": 9,
+				"avs": 31
+			},
+			{
+				"time": 10,
+				"volume": 24,
+				"avs": 16
+			},
+			{
+				"time": 11,
+				"volume": 8,
+				"avs": 32
+			},
+			{
+				"time": 12,
+				"volume": 25,
+				"avs": 15
+			},
+			{
+				"time": 13,
+				"volume": 16,
+				"avs": 24
+			},
+			{
+				"time": 14,
+				"volume": 10,
+				"avs": 30
+			},
+			{
+				"time": 15,
+				"volume": 27,
+				"avs": 13
+			},
+			{
+				"time": 16,
+				"volume": 28,
+				"avs": 12
+			},
+			{
+				"time": 17,
+				"volume": 10,
+				"avs": 30
+			},
+			{
+				"time": 18,
+				"volume": 5,
+				"avs": 35
+			},
+			{
+				"time": 19,
+				"volume": 25,
+				"avs": 15
+			},
+			{
+				"time": 20,
+				"volume": 22,
+				"avs": 18
+			},
+			{
+				"time": 21,
+				"volume": 19,
+				"avs": 21
+			},
+			{
+				"time": 22,
+				"volume": 16,
+				"avs": 24
+			},
+			{
+				"time": 23,
+				"volume": 8,
+				"avs": 32
+			}
+		]
+	},
+	{
+		"from": "언주역",
+		"to": "선정릉역",
+		"traffic": [
+			{
+				"time": 0,
+				"volume": 29,
+				"avs": 11
+			},
+			{
+				"time": 1,
+				"volume": 17,
+				"avs": 23
+			},
+			{
+				"time": 2,
+				"volume": 24,
+				"avs": 16
+			},
+			{
+				"time": 3,
+				"volume": 21,
+				"avs": 19
+			},
+			{
+				"time": 4,
+				"volume": 27,
+				"avs": 13
+			},
+			{
+				"time": 5,
+				"volume": 7,
+				"avs": 33
+			},
+			{
+				"time": 6,
+				"volume": 14,
+				"avs": 26
+			},
+			{
+				"time": 7,
+				"volume": 26,
+				"avs": 14
+			},
+			{
+				"time": 8,
+				"volume": 27,
+				"avs": 13
+			},
+			{
+				"time": 9,
+				"volume": 19,
+				"avs": 21
+			},
+			{
+				"time": 10,
+				"volume": 21,
+				"avs": 19
+			},
+			{
+				"time": 11,
+				"volume": 21,
+				"avs": 19
+			},
+			{
+				"time": 12,
+				"volume": 12,
+				"avs": 28
+			},
+			{
+				"time": 13,
+				"volume": 10,
+				"avs": 30
+			},
+			{
+				"time": 14,
+				"volume": 6,
+				"avs": 34
+			},
+			{
+				"time": 15,
+				"volume": 26,
+				"avs": 14
+			},
+			{
+				"time": 16,
+				"volume": 21,
+				"avs": 19
+			},
+			{
+				"time": 17,
+				"volume": 7,
+				"avs": 33
+			},
+			{
+				"time": 18,
+				"volume": 28,
+				"avs": 12
+			},
+			{
+				"time": 19,
+				"volume": 13,
+				"avs": 27
+			},
+			{
+				"time": 20,
+				"volume": 29,
+				"avs": 11
+			},
+			{
+				"time": 21,
+				"volume": 16,
+				"avs": 24
+			},
+			{
+				"time": 22,
+				"volume": 7,
+				"avs": 33
+			},
+			{
+				"time": 23,
+				"volume": 28,
+				"avs": 12
+			}
+		]
+	},
+	{
+		"from": "언주역",
+		"to": "신논현역",
+		"traffic": [
+			{
+				"time": 0,
+				"volume": 11,
+				"avs": 29
+			},
+			{
+				"time": 1,
+				"volume": 26,
+				"avs": 14
+			},
+			{
+				"time": 2,
+				"volume": 19,
+				"avs": 21
+			},
+			{
+				"time": 3,
+				"volume": 19,
+				"avs": 21
+			},
+			{
+				"time": 4,
+				"volume": 17,
+				"avs": 23
+			},
+			{
+				"time": 5,
+				"volume": 14,
+				"avs": 26
+			},
+			{
+				"time": 6,
+				"volume": 18,
+				"avs": 22
+			},
+			{
+				"time": 7,
+				"volume": 10,
+				"avs": 30
+			},
+			{
+				"time": 8,
+				"volume": 28,
+				"avs": 12
+			},
+			{
+				"time": 9,
+				"volume": 15,
+				"avs": 25
+			},
+			{
+				"time": 10,
+				"volume": 6,
+				"avs": 34
+			},
+			{
+				"time": 11,
+				"volume": 23,
+				"avs": 17
+			},
+			{
+				"time": 12,
+				"volume": 10,
+				"avs": 30
+			},
+			{
+				"time": 13,
+				"volume": 28,
+				"avs": 12
+			},
+			{
+				"time": 14,
+				"volume": 13,
+				"avs": 27
+			},
+			{
+				"time": 15,
+				"volume": 9,
+				"avs": 31
+			},
+			{
+				"time": 16,
+				"volume": 10,
+				"avs": 30
+			},
+			{
+				"time": 17,
+				"volume": 11,
+				"avs": 29
+			},
+			{
+				"time": 18,
+				"volume": 18,
+				"avs": 22
+			},
+			{
+				"time": 19,
+				"volume": 11,
+				"avs": 29
+			},
+			{
+				"time": 20,
+				"volume": 25,
+				"avs": 15
+			},
+			{
+				"time": 21,
+				"volume": 8,
+				"avs": 32
+			},
+			{
+				"time": 22,
+				"volume": 6,
+				"avs": 34
+			},
+			{
+				"time": 23,
+				"volume": 14,
+				"avs": 26
+			}
+		]
+	},
+	{
+		"from": "언주역",
+		"to": "학동역",
+		"traffic": [
+			{
+				"time": 0,
+				"volume": 20,
+				"avs": 20
+			},
+			{
+				"time": 1,
+				"volume": 11,
+				"avs": 29
+			},
+			{
+				"time": 2,
+				"volume": 29,
+				"avs": 11
+			},
+			{
+				"time": 3,
+				"volume": 23,
+				"avs": 17
+			},
+			{
+				"time": 4,
+				"volume": 16,
+				"avs": 24
+			},
+			{
+				"time": 5,
+				"volume": 23,
+				"avs": 17
+			},
+			{
+				"time": 6,
+				"volume": 13,
+				"avs": 27
+			},
+			{
+				"time": 7,
+				"volume": 8,
+				"avs": 32
+			},
+			{
+				"time": 8,
+				"volume": 14,
+				"avs": 26
+			},
+			{
+				"time": 9,
+				"volume": 13,
+				"avs": 27
+			},
+			{
+				"time": 10,
+				"volume": 25,
+				"avs": 15
+			},
+			{
+				"time": 11,
+				"volume": 25,
+				"avs": 15
+			},
+			{
+				"time": 12,
+				"volume": 17,
+				"avs": 23
+			},
+			{
+				"time": 13,
+				"volume": 14,
+				"avs": 26
+			},
+			{
+				"time": 14,
+				"volume": 23,
+				"avs": 17
+			},
+			{
+				"time": 15,
+				"volume": 26,
+				"avs": 14
+			},
+			{
+				"time": 16,
+				"volume": 11,
+				"avs": 29
+			},
+			{
+				"time": 17,
+				"volume": 7,
+				"avs": 33
+			},
+			{
+				"time": 18,
+				"volume": 13,
+				"avs": 27
+			},
+			{
+				"time": 19,
+				"volume": 23,
+				"avs": 17
+			},
+			{
+				"time": 20,
+				"volume": 29,
+				"avs": 11
+			},
+			{
+				"time": 21,
+				"volume": 6,
+				"avs": 34
+			},
+			{
+				"time": 22,
+				"volume": 21,
+				"avs": 19
+			},
+			{
+				"time": 23,
+				"volume": 20,
+				"avs": 20
+			}
+		]
+	},
+	{
+		"from": "신논현역",
+		"to": "언주역",
+		"traffic": [
+			{
+				"time": 0,
+				"volume": 28,
+				"avs": 12
+			},
+			{
+				"time": 1,
+				"volume": 28,
+				"avs": 12
+			},
+			{
+				"time": 2,
+				"volume": 23,
+				"avs": 17
+			},
+			{
+				"time": 3,
+				"volume": 9,
+				"avs": 31
+			},
+			{
+				"time": 4,
+				"volume": 22,
+				"avs": 18
+			},
+			{
+				"time": 5,
+				"volume": 20,
+				"avs": 20
+			},
+			{
+				"time": 6,
+				"volume": 28,
+				"avs": 12
+			},
+			{
+				"time": 7,
+				"volume": 19,
+				"avs": 21
+			},
+			{
+				"time": 8,
+				"volume": 23,
+				"avs": 17
+			},
+			{
+				"time": 9,
+				"volume": 20,
+				"avs": 20
+			},
+			{
+				"time": 10,
+				"volume": 22,
+				"avs": 18
+			},
+			{
+				"time": 11,
+				"volume": 12,
+				"avs": 28
+			},
+			{
+				"time": 12,
+				"volume": 17,
+				"avs": 23
+			},
+			{
+				"time": 13,
+				"volume": 20,
+				"avs": 20
+			},
+			{
+				"time": 14,
+				"volume": 16,
+				"avs": 24
+			},
+			{
+				"time": 15,
+				"volume": 17,
+				"avs": 23
+			},
+			{
+				"time": 16,
+				"volume": 15,
+				"avs": 25
+			},
+			{
+				"time": 17,
+				"volume": 7,
+				"avs": 33
+			},
+			{
+				"time": 18,
+				"volume": 16,
+				"avs": 24
+			},
+			{
+				"time": 19,
+				"volume": 8,
+				"avs": 32
+			},
+			{
+				"time": 20,
+				"volume": 12,
+				"avs": 28
+			},
+			{
+				"time": 21,
+				"volume": 6,
+				"avs": 34
+			},
+			{
+				"time": 22,
+				"volume": 19,
+				"avs": 21
+			},
+			{
+				"time": 23,
+				"volume": 15,
+				"avs": 25
+			}
+		]
+	},
+	{
+		"from": "신논현역",
+		"to": "논현역",
+		"traffic": [
+			{
+				"time": 0,
+				"volume": 22,
+				"avs": 18
+			},
+			{
+				"time": 1,
+				"volume": 21,
+				"avs": 19
+			},
+			{
+				"time": 2,
+				"volume": 29,
+				"avs": 11
+			},
+			{
+				"time": 3,
+				"volume": 19,
+				"avs": 21
+			},
+			{
+				"time": 4,
+				"volume": 22,
+				"avs": 18
+			},
+			{
+				"time": 5,
+				"volume": 13,
+				"avs": 27
+			},
+			{
+				"time": 6,
+				"volume": 9,
+				"avs": 31
+			},
+			{
+				"time": 7,
+				"volume": 5,
+				"avs": 35
+			},
+			{
+				"time": 8,
+				"volume": 10,
+				"avs": 30
+			},
+			{
+				"time": 9,
+				"volume": 25,
+				"avs": 15
+			},
+			{
+				"time": 10,
+				"volume": 18,
+				"avs": 22
+			},
+			{
+				"time": 11,
+				"volume": 11,
+				"avs": 29
+			},
+			{
+				"time": 12,
+				"volume": 29,
+				"avs": 11
+			},
+			{
+				"time": 13,
+				"volume": 22,
+				"avs": 18
+			},
+			{
+				"time": 14,
+				"volume": 16,
+				"avs": 24
+			},
+			{
+				"time": 15,
+				"volume": 29,
+				"avs": 11
+			},
+			{
+				"time": 16,
+				"volume": 20,
+				"avs": 20
+			},
+			{
+				"time": 17,
+				"volume": 7,
+				"avs": 33
+			},
+			{
+				"time": 18,
+				"volume": 27,
+				"avs": 13
+			},
+			{
+				"time": 19,
+				"volume": 9,
+				"avs": 31
+			},
+			{
+				"time": 20,
+				"volume": 28,
+				"avs": 12
+			},
+			{
+				"time": 21,
+				"volume": 19,
+				"avs": 21
+			},
+			{
+				"time": 22,
+				"volume": 11,
+				"avs": 29
+			},
+			{
+				"time": 23,
+				"volume": 21,
+				"avs": 19
+			}
+		]
+	},
+	{
+		"from": "논현역",
+		"to": "신논현역",
+		"traffic": [
+			{
+				"time": 0,
+				"volume": 21,
+				"avs": 19
+			},
+			{
+				"time": 1,
+				"volume": 29,
+				"avs": 11
+			},
+			{
+				"time": 2,
+				"volume": 11,
+				"avs": 29
+			},
+			{
+				"time": 3,
+				"volume": 28,
+				"avs": 12
+			},
+			{
+				"time": 4,
+				"volume": 21,
+				"avs": 19
+			},
+			{
+				"time": 5,
+				"volume": 5,
+				"avs": 35
+			},
+			{
+				"time": 6,
+				"volume": 27,
+				"avs": 13
+			},
+			{
+				"time": 7,
+				"volume": 20,
+				"avs": 20
+			},
+			{
+				"time": 8,
+				"volume": 20,
+				"avs": 20
+			},
+			{
+				"time": 9,
+				"volume": 27,
+				"avs": 13
+			},
+			{
+				"time": 10,
+				"volume": 21,
+				"avs": 19
+			},
+			{
+				"time": 11,
+				"volume": 22,
+				"avs": 18
+			},
+			{
+				"time": 12,
+				"volume": 25,
+				"avs": 15
+			},
+			{
+				"time": 13,
+				"volume": 28,
+				"avs": 12
+			},
+			{
+				"time": 14,
+				"volume": 18,
+				"avs": 22
+			},
+			{
+				"time": 15,
+				"volume": 14,
+				"avs": 26
+			},
+			{
+				"time": 16,
+				"volume": 18,
+				"avs": 22
+			},
+			{
+				"time": 17,
+				"volume": 29,
+				"avs": 11
+			},
+			{
+				"time": 18,
+				"volume": 15,
+				"avs": 25
+			},
+			{
+				"time": 19,
+				"volume": 6,
+				"avs": 34
+			},
+			{
+				"time": 20,
+				"volume": 27,
+				"avs": 13
+			},
+			{
+				"time": 21,
+				"volume": 19,
+				"avs": 21
+			},
+			{
+				"time": 22,
+				"volume": 19,
+				"avs": 21
+			},
+			{
+				"time": 23,
+				"volume": 19,
+				"avs": 21
+			}
+		]
+	},
+	{
+		"from": "논현역",
+		"to": "신사역",
+		"traffic": [
+			{
+				"time": 0,
+				"volume": 21,
+				"avs": 19
+			},
+			{
+				"time": 1,
+				"volume": 28,
+				"avs": 12
+			},
+			{
+				"time": 2,
+				"volume": 10,
+				"avs": 30
+			},
+			{
+				"time": 3,
+				"volume": 8,
+				"avs": 32
+			},
+			{
+				"time": 4,
+				"volume": 20,
+				"avs": 20
+			},
+			{
+				"time": 5,
+				"volume": 22,
+				"avs": 18
+			},
+			{
+				"time": 6,
+				"volume": 14,
+				"avs": 26
+			},
+			{
+				"time": 7,
+				"volume": 12,
+				"avs": 28
+			},
+			{
+				"time": 8,
+				"volume": 28,
+				"avs": 12
+			},
+			{
+				"time": 9,
+				"volume": 10,
+				"avs": 30
+			},
+			{
+				"time": 10,
+				"volume": 13,
+				"avs": 27
+			},
+			{
+				"time": 11,
+				"volume": 17,
+				"avs": 23
+			},
+			{
+				"time": 12,
+				"volume": 16,
+				"avs": 24
+			},
+			{
+				"time": 13,
+				"volume": 14,
+				"avs": 26
+			},
+			{
+				"time": 14,
+				"volume": 27,
+				"avs": 13
+			},
+			{
+				"time": 15,
+				"volume": 15,
+				"avs": 25
+			},
+			{
+				"time": 16,
+				"volume": 5,
+				"avs": 35
+			},
+			{
+				"time": 17,
+				"volume": 12,
+				"avs": 28
+			},
+			{
+				"time": 18,
+				"volume": 24,
+				"avs": 16
+			},
+			{
+				"time": 19,
+				"volume": 19,
+				"avs": 21
+			},
+			{
+				"time": 20,
+				"volume": 18,
+				"avs": 22
+			},
+			{
+				"time": 21,
+				"volume": 18,
+				"avs": 22
+			},
+			{
+				"time": 22,
+				"volume": 23,
+				"avs": 17
+			},
+			{
+				"time": 23,
+				"volume": 17,
+				"avs": 23
+			}
+		]
+	},
+	{
+		"from": "논현역",
+		"to": "학동역",
+		"traffic": [
+			{
+				"time": 0,
+				"volume": 10,
+				"avs": 30
+			},
+			{
+				"time": 1,
+				"volume": 13,
+				"avs": 27
+			},
+			{
+				"time": 2,
+				"volume": 8,
+				"avs": 32
+			},
+			{
+				"time": 3,
+				"volume": 7,
+				"avs": 33
+			},
+			{
+				"time": 4,
+				"volume": 16,
+				"avs": 24
+			},
+			{
+				"time": 5,
+				"volume": 26,
+				"avs": 14
+			},
+			{
+				"time": 6,
+				"volume": 25,
+				"avs": 15
+			},
+			{
+				"time": 7,
+				"volume": 11,
+				"avs": 29
+			},
+			{
+				"time": 8,
+				"volume": 27,
+				"avs": 13
+			},
+			{
+				"time": 9,
+				"volume": 6,
+				"avs": 34
+			},
+			{
+				"time": 10,
+				"volume": 12,
+				"avs": 28
+			},
+			{
+				"time": 11,
+				"volume": 11,
+				"avs": 29
+			},
+			{
+				"time": 12,
+				"volume": 9,
+				"avs": 31
+			},
+			{
+				"time": 13,
+				"volume": 11,
+				"avs": 29
+			},
+			{
+				"time": 14,
+				"volume": 7,
+				"avs": 33
+			},
+			{
+				"time": 15,
+				"volume": 6,
+				"avs": 34
+			},
+			{
+				"time": 16,
+				"volume": 19,
+				"avs": 21
+			},
+			{
+				"time": 17,
+				"volume": 12,
+				"avs": 28
+			},
+			{
+				"time": 18,
+				"volume": 20,
+				"avs": 20
+			},
+			{
+				"time": 19,
+				"volume": 23,
+				"avs": 17
+			},
+			{
+				"time": 20,
+				"volume": 7,
+				"avs": 33
+			},
+			{
+				"time": 21,
+				"volume": 8,
+				"avs": 32
+			},
+			{
+				"time": 22,
+				"volume": 11,
+				"avs": 29
+			},
+			{
+				"time": 23,
+				"volume": 27,
+				"avs": 13
+			}
+		]
+	},
+	{
+		"from": "학동역",
+		"to": "을지병원사거리",
+		"traffic": [
+			{
+				"time": 0,
+				"volume": 25,
+				"avs": 15
+			},
+			{
+				"time": 1,
+				"volume": 11,
+				"avs": 29
+			},
+			{
+				"time": 2,
+				"volume": 5,
+				"avs": 35
+			},
+			{
+				"time": 3,
+				"volume": 27,
+				"avs": 13
+			},
+			{
+				"time": 4,
+				"volume": 19,
+				"avs": 21
+			},
+			{
+				"time": 5,
+				"volume": 27,
+				"avs": 13
+			},
+			{
+				"time": 6,
+				"volume": 27,
+				"avs": 13
+			},
+			{
+				"time": 7,
+				"volume": 27,
+				"avs": 13
+			},
+			{
+				"time": 8,
+				"volume": 26,
+				"avs": 14
+			},
+			{
+				"time": 9,
+				"volume": 9,
+				"avs": 31
+			},
+			{
+				"time": 10,
+				"volume": 21,
+				"avs": 19
+			},
+			{
+				"time": 11,
+				"volume": 23,
+				"avs": 17
+			},
+			{
+				"time": 12,
+				"volume": 13,
+				"avs": 27
+			},
+			{
+				"time": 13,
+				"volume": 12,
+				"avs": 28
+			},
+			{
+				"time": 14,
+				"volume": 15,
+				"avs": 25
+			},
+			{
+				"time": 15,
+				"volume": 11,
+				"avs": 29
+			},
+			{
+				"time": 16,
+				"volume": 8,
+				"avs": 32
+			},
+			{
+				"time": 17,
+				"volume": 21,
+				"avs": 19
+			},
+			{
+				"time": 18,
+				"volume": 15,
+				"avs": 25
+			},
+			{
+				"time": 19,
+				"volume": 25,
+				"avs": 15
+			},
+			{
+				"time": 20,
+				"volume": 20,
+				"avs": 20
+			},
+			{
+				"time": 21,
+				"volume": 21,
+				"avs": 19
+			},
+			{
+				"time": 22,
+				"volume": 6,
+				"avs": 34
+			},
+			{
+				"time": 23,
+				"volume": 28,
+				"avs": 12
+			}
+		]
+	},
+	{
+		"from": "학동역",
+		"to": "강남구청역",
+		"traffic": [
+			{
+				"time": 0,
+				"volume": 15,
+				"avs": 25
+			},
+			{
+				"time": 1,
+				"volume": 25,
+				"avs": 15
+			},
+			{
+				"time": 2,
+				"volume": 11,
+				"avs": 29
+			},
+			{
+				"time": 3,
+				"volume": 7,
+				"avs": 33
+			},
+			{
+				"time": 4,
+				"volume": 6,
+				"avs": 34
+			},
+			{
+				"time": 5,
+				"volume": 26,
+				"avs": 14
+			},
+			{
+				"time": 6,
+				"volume": 9,
+				"avs": 31
+			},
+			{
+				"time": 7,
+				"volume": 21,
+				"avs": 19
+			},
+			{
+				"time": 8,
+				"volume": 22,
+				"avs": 18
+			},
+			{
+				"time": 9,
+				"volume": 11,
+				"avs": 29
+			},
+			{
+				"time": 10,
+				"volume": 21,
+				"avs": 19
+			},
+			{
+				"time": 11,
+				"volume": 11,
+				"avs": 29
+			},
+			{
+				"time": 12,
+				"volume": 18,
+				"avs": 22
+			},
+			{
+				"time": 13,
+				"volume": 19,
+				"avs": 21
+			},
+			{
+				"time": 14,
+				"volume": 5,
+				"avs": 35
+			},
+			{
+				"time": 15,
+				"volume": 10,
+				"avs": 30
+			},
+			{
+				"time": 16,
+				"volume": 24,
+				"avs": 16
+			},
+			{
+				"time": 17,
+				"volume": 16,
+				"avs": 24
+			},
+			{
+				"time": 18,
+				"volume": 5,
+				"avs": 35
+			},
+			{
+				"time": 19,
+				"volume": 26,
+				"avs": 14
+			},
+			{
+				"time": 20,
+				"volume": 7,
+				"avs": 33
+			},
+			{
+				"time": 21,
+				"volume": 5,
+				"avs": 35
+			},
+			{
+				"time": 22,
+				"volume": 21,
+				"avs": 19
+			},
+			{
+				"time": 23,
+				"volume": 29,
+				"avs": 11
+			}
+		]
+	},
+	{
+		"from": "학동역",
+		"to": "언주역",
+		"traffic": [
+			{
+				"time": 0,
+				"volume": 6,
+				"avs": 34
+			},
+			{
+				"time": 1,
+				"volume": 7,
+				"avs": 33
+			},
+			{
+				"time": 2,
+				"volume": 9,
+				"avs": 31
+			},
+			{
+				"time": 3,
+				"volume": 14,
+				"avs": 26
+			},
+			{
+				"time": 4,
+				"volume": 17,
+				"avs": 23
+			},
+			{
+				"time": 5,
+				"volume": 11,
+				"avs": 29
+			},
+			{
+				"time": 6,
+				"volume": 12,
+				"avs": 28
+			},
+			{
+				"time": 7,
+				"volume": 15,
+				"avs": 25
+			},
+			{
+				"time": 8,
+				"volume": 15,
+				"avs": 25
+			},
+			{
+				"time": 9,
+				"volume": 6,
+				"avs": 34
+			},
+			{
+				"time": 10,
+				"volume": 7,
+				"avs": 33
+			},
+			{
+				"time": 11,
+				"volume": 9,
+				"avs": 31
+			},
+			{
+				"time": 12,
+				"volume": 11,
+				"avs": 29
+			},
+			{
+				"time": 13,
+				"volume": 20,
+				"avs": 20
+			},
+			{
+				"time": 14,
+				"volume": 19,
+				"avs": 21
+			},
+			{
+				"time": 15,
+				"volume": 9,
+				"avs": 31
+			},
+			{
+				"time": 16,
+				"volume": 10,
+				"avs": 30
+			},
+			{
+				"time": 17,
+				"volume": 12,
+				"avs": 28
+			},
+			{
+				"time": 18,
+				"volume": 27,
+				"avs": 13
+			},
+			{
+				"time": 19,
+				"volume": 26,
+				"avs": 14
+			},
+			{
+				"time": 20,
+				"volume": 7,
+				"avs": 33
+			},
+			{
+				"time": 21,
+				"volume": 9,
+				"avs": 31
+			},
+			{
+				"time": 22,
+				"volume": 12,
+				"avs": 28
+			},
+			{
+				"time": 23,
+				"volume": 10,
+				"avs": 30
+			}
+		]
+	},
+	{
+		"from": "학동역",
+		"to": "논현역",
+		"traffic": [
+			{
+				"time": 0,
+				"volume": 5,
+				"avs": 35
+			},
+			{
+				"time": 1,
+				"volume": 18,
+				"avs": 22
+			},
+			{
+				"time": 2,
+				"volume": 27,
+				"avs": 13
+			},
+			{
+				"time": 3,
+				"volume": 13,
+				"avs": 27
+			},
+			{
+				"time": 4,
+				"volume": 22,
+				"avs": 18
+			},
+			{
+				"time": 5,
+				"volume": 28,
+				"avs": 12
+			},
+			{
+				"time": 6,
+				"volume": 27,
+				"avs": 13
+			},
+			{
+				"time": 7,
+				"volume": 15,
+				"avs": 25
+			},
+			{
+				"time": 8,
+				"volume": 5,
+				"avs": 35
+			},
+			{
+				"time": 9,
+				"volume": 23,
+				"avs": 17
+			},
+			{
+				"time": 10,
+				"volume": 15,
+				"avs": 25
+			},
+			{
+				"time": 11,
+				"volume": 29,
+				"avs": 11
+			},
+			{
+				"time": 12,
+				"volume": 15,
+				"avs": 25
+			},
+			{
+				"time": 13,
+				"volume": 11,
+				"avs": 29
+			},
+			{
+				"time": 14,
+				"volume": 28,
+				"avs": 12
+			},
+			{
+				"time": 15,
+				"volume": 25,
+				"avs": 15
+			},
+			{
+				"time": 16,
+				"volume": 20,
+				"avs": 20
+			},
+			{
+				"time": 17,
+				"volume": 10,
+				"avs": 30
+			},
+			{
+				"time": 18,
+				"volume": 10,
+				"avs": 30
+			},
+			{
+				"time": 19,
+				"volume": 14,
+				"avs": 26
+			},
+			{
+				"time": 20,
+				"volume": 21,
+				"avs": 19
+			},
+			{
+				"time": 21,
+				"volume": 25,
+				"avs": 15
+			},
+			{
+				"time": 22,
+				"volume": 19,
+				"avs": 21
+			},
+			{
+				"time": 23,
+				"volume": 14,
+				"avs": 26
+			}
+		]
+	}
+]

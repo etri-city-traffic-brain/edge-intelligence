@@ -1,0 +1,10 @@
+.wrapper {
+  position: fixed;
+  z-index: 1000;
+}
+.section {
+  margin: 10px;
+}
+.hidden {
+  display: none;
+}

@@ -1,0 +1,485 @@
+$(document).ready(function() {
+  drawTrafficFlow();
+  drawPropagationTree();
+  drawCongestionHeatmap();
+});
+
+function drawTrafficFlow() {
+  Highcharts.chart('traffic-flow', {
+
+    title: {
+      text: 'Traffic flow'
+    },
+
+    yAxis: [{
+      title: {
+        text: 'Speed'
+      },
+      labels: {
+        style: {
+          fontSize: 14
+        }
+      }
+    }, {
+      title: {
+        text: 'Volume'
+      },
+      labels: {
+        style: {
+          fontSize: 14
+        }
+      },
+      opposite: true
+    }],
+
+    credits: {
+      enabled: false
+    },
+
+    xAxis: {
+      categories: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23],
+      labels: {
+        style: {
+          fontSize: 14
+        }
+      }
+    },
+
+    legend: {
+      layout: 'vertical',
+      align: 'right',
+      verticalAlign: 'top',
+      floating: true,
+      x: -65,
+      y: -10
+    },
+
+    plotOptions: {
+      series: {
+        label: {
+          connectorAllowed: false
+        },
+        pointStart: 0
+      },
+      line: {
+        marker: {
+          enabled: false
+        }
+      }
+    },
+
+    series: [{
+      yAxis: 0,
+      name: 'Speed',
+      tooltip: {
+        valueSuffix: 'km/h'
+      },
+      data: [43, 52, 57, 69, 97, 79, 67, 54, 43, 52, 57, 69, 97, 79, 67, 54, 43, 52, 57, 69, 97, 79, 67, 54]
+    }, {
+      yAxis: 1,
+      name: 'Volume',
+      tooltip: {
+        valueSuffix: ' units'
+      },
+      data: [249, 240, 297, 298, 324, 302, 381, 404, 249, 240, 297, 298, 324, 302, 381, 404, 249, 240, 297, 298, 324, 302, 381, 404]
+    }],
+
+    responsive: {
+      rules: [{
+        condition: {
+          maxWidth: 500
+        },
+        chartOptions: {
+          legend: {
+            layout: 'horizontal',
+            align: 'center',
+            verticalAlign: 'bottom'
+          }
+        }
+      }]
+    }
+
+  });
+}
+
+function drawPropagationTree() {
+  var root = {
+    name: 'A',
+    children: [
+      {
+        name: 'B',
+        children: [
+          {name: 'C'}, {name:'D'},
+          {
+            name: 'E',
+            children: [{name: 'F'}, {name: 'G'}]
+          }
+        ]
+      }
+    ]
+  };
+
+  var i = 0;
+  var duration = 0;
+  //var rectW = 30;
+  //var rectH = 30;
+  var rectR = 15;
+  var tree = d3.layout.tree();
+  var diagonal = d3.svg.diagonal()
+    .projection(function (d) {
+      return [d.x, d.y];
+    });
+  var section = d3.select('#propagation-tree').html('').classed('empty', false);
+  var width = parseInt(section.style('width')) - parseInt(section.style('border-left-width')) - parseInt(section.style('border-right-width'));
+  var height = parseInt(section.style('height')) - parseInt(section.style('border-top-width')) - parseInt(section.style('border-bottom-width'));
+  var rootX = width / 2;
+  var svg = section.append('svg').attr('width', width).attr('height', height)
+    //.call(zm = d3.behavior.zoom().scaleExtent([1, 3]).on('zoom', redraw))
+    .append('g').attr('transform', 'translate(' + rootX + ',' + 20 + ')');
+  
+  //zm.translate([rootX, 20]);
+  root.x0 = rectR;
+  root.y0 = height / 2;
+  
+  function collapse(d) {
+    if (d.children) {
+        d._children = d.children;
+        d._children.forEach(collapse);
+        d.children = null;
+    }
+  }
+
+  //root.children.forEach(collapse);
+  update(root);
+
+  function update(source) {
+    var nodes = tree.nodes(root).reverse();
+    var links = tree.links(nodes);
+
+    nodes.forEach(function (d) {
+      d.y = d.depth * 50;
+    });
+
+    var node = svg.selectAll('g.node')
+      .data(nodes, function(d) {
+        return d.id || (d.id = ++i);
+      });
+    
+    var nodeEnter = node.enter().append("g")
+      .attr("class", "node")
+      .attr("transform", function (d) {
+        return "translate(" + source.x0 + "," + source.y0 + ")";
+      })
+      .on("click", click);
+
+    nodeEnter.append("circle")
+      //.attr("width", rectW)
+      //.attr("height", rectH)
+      .attr("r", rectR)
+      .attr("stroke", "black")
+      .attr("stroke-width", 1)
+      .style("fill", function (d) {
+        return d._children ? "lightsteelblue" : "#fff";
+      });
+
+    nodeEnter.append("text")
+      .attr("x", 0)
+      .attr("y", 0)
+      .attr("dy", ".35em")
+      .attr("text-anchor", "middle")
+      .text(function (d) {
+        return d.name;
+      });
+
+    // Transition nodes to their new position.
+    var nodeUpdate = node.transition()
+      .duration(duration)
+      .attr("transform", function (d) {
+        d.x = (d.x - 0.5) * 100;
+        var y = d.y + rectR * d.depth + 6 - (d.depth-1) * (d.depth > 0) * rectR;
+        return "translate(" + d.x + "," + y + ")";
+      });
+
+    nodeUpdate.select("circle")
+      //.attr("width", rectW)
+      //.attr("height", rectH)
+      .attr("r", rectR)
+      .attr("stroke", "black")
+      .attr("stroke-width", 1)
+      .style("fill", function (d) {
+        return d._children ? "lightsteelblue" : "#fff";
+      });
+
+    nodeUpdate.select("text")
+      .style("fill-opacity", 1);
+
+    // Transition exiting nodes to the parent's new position.
+    var nodeExit = node.exit().transition()
+      .duration(duration)
+      .attr("transform", function (d) {
+        return "translate(" + source.x + "," + source.y + ")";
+      })
+      .remove();
+
+    nodeExit.select("circle")
+      //.attr("width", rectW)
+      //.attr("height", rectH)
+      .attr("r", rectR)
+      //.attr("width", bbox.getBBox().width)""
+      //.attr("height", bbox.getBBox().height)
+      .attr("stroke", "black")
+      .attr("stroke-width", 1);
+
+    nodeExit.select("text");
+
+    /*svg.append("defs").append("marker")
+      .attr("id", "arrow1") // 해당 요소의 id을 추가하고요. 
+      .attr("markerUnits", "strokeWidth") 
+      .attr("markerWidth", "12").attr("markerHeight", "12")// 너비와 높이를 정해주고, 
+      .attr("viewBox", "0 0 12 12")//해당 개체가 어떻게 보여줄지 정하고, 
+      .attr("refX", "6").attr("refY", "6") 
+      // marker가 선에 그려질 경우 어떤 포인트에서 그려질지를 정합니다. 
+      // 예를 들어, viewbox가 "0 0 12 12"인 상태에서 각각 6으로 잡을 경우에는 중점이 딱 떨어지게 되겠죠.
+      .attr("orient", "auto")// 이걸 없애면 선의 방향에 맞춰서 그려지지 않습니다. 
+    
+    // 이제 해당 부분에 그려질 그림을 그려줍니다.
+    // 아래처럼 반드시 하나의 그림만 추가될 필요는 없고, 여러 그림이 추가될 수 있습니다.
+    var marker1 = d3.select("#arrow1");
+      marker1.append("polygon")
+        .attr("points", "0 0, 0 12, 12 12, 12 0")
+        .attr("fill", "black");
+      marker1.append("polygon")
+        .attr("points", "0 0, 0 6, 6 6, 12 0, 0 0")
+        .attr("fill", "blue");*/
+    svg.append("svg:defs").append("svg:marker")
+      .attr("id", "triangle")
+      .attr("refX", 6)
+      .attr("refY", 6)
+      .attr("markerWidth", 100)
+      .attr("markerHeight", 100)
+      .attr("markerUnits","userSpaceOnUse")
+      .attr("orient", "auto")
+      .append("path")
+      .attr("d", "M 0 0 12 6 12 6 0 12 3 6")
+      .style("fill", "black");
+    /*svg.append('defs').append('marker')
+      .attr("id",'arrowhead')
+      .attr('viewBox','-0 -5 10 10') //the bound of the SVG viewport for the current SVG fragment. defines a coordinate system 10 wide and 10 high starting on (0,-5)
+        .attr('refX', 23) // x coordinate for the reference point of the marker. If circle is bigger, this need to be bigger.
+        .attr('refY', 0)
+        .attr('orient','auto')
+        .attr('markerWidth', 13)
+        .attr('markerHeight', 13)
+        .attr('xoverflow','visible')
+      .append('svg:path')
+      .attr('d', 'M 0,-5 L 10 ,0 L 0,5')
+      .attr('fill', '#999')
+      .style('stroke','none');*/
+
+    // Update the links…
+    var link = svg.selectAll("path.link")
+      .data(links, function (d) {
+        return d.target.id;
+      });
+    
+    /*link.enter().append('line')
+      .attr('class', 'links')
+      .attr('marker-end','url(#arrowhead)');
+
+    link.enter().append('path')
+      .attr('class', 'edgepath')
+      .attr('fill-opacity', '0')
+      .attr('stroke-opacity', '0')
+      .attr('id', function(d, i) { return 'edgepath' + i; })
+      .style('pointer-events', 'none');*/
+
+    // Enter any new links at the parent's previous position.
+    link.enter().insert("path", "g")
+      .attr("class", "link")
+      .attr("x", 0)
+      .attr("y", 0)
+      .attr("marker-end", "url(#triangle)")
+      .attr("d", function (d) {
+        var o = {
+          x: source.x0,
+          y: source.y0
+        };
+        return diagonal({
+          source: o,
+          target: o
+        });
+      });
+
+    // Transition links to their new position.
+    link.transition()
+      .duration(duration)
+      .attr("d", diagonal);
+
+    // Transition exiting nodes to the parent's new position.
+    link.exit().transition()
+      .duration(duration)
+      .attr("d", function (d) {
+        var o = {
+          x: source.x,
+          y: source.y
+        };
+        return diagonal({
+          source: o,
+          target: o
+        });
+      })
+      .remove();
+
+    // Stash the old positions for transition.
+    nodes.forEach(function (d) {
+      d.x0 = d.x;
+      d.y0 = d.y;
+    });
+  }
+
+  // Toggle children on click.
+  function click(d) {
+    if (d.children) {
+      d._children = d.children;
+      d.children = null;
+    } else {
+      d.children = d._children;
+      d._children = null;
+    }
+    update(d);
+  }
+
+  //Redraw for zoom
+  function redraw() {
+    //console.log("here", d3.event.translate, d3.event.scale);
+    svg.attr("transform",
+      "translate(" + d3.event.translate + ")"
+      + " scale(" + d3.event.scale + ")");
+  }
+}
+
+function getPointCategoryName(point, dimension) {
+  var series = point.series,
+    isY = dimension === 'y',
+    axis = series[isY ? 'yAxis' : 'xAxis'];
+  return axis.categories[point[isY ? 'y' : 'x']];
+}
+
+function drawCongestionHeatmap() {
+  var data = [];
+  for (var i = 0; i < 7; i++) {
+    for (var j = 8; j < 24; j++) {
+      data.push([j-8, i, Math.floor(Math.random()*150)]);
+    }
+  }
+
+  Highcharts.chart('congestion-heatmap', {
+
+    chart: {
+      type: 'heatmap',
+      marginTop: 40,
+      marginBottom: 40,
+      plotBorderWidth: 1
+    },
+
+    title: {
+      text: 'Cause of congestion'
+    },
+    
+    credits: {
+      enabled: false
+    },
+
+    xAxis: {
+      categories: [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23],
+      labels: {
+        style: {
+          fontSize: 14
+        }
+      }
+    },
+
+    yAxis: {
+      categories: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+      title: null,
+      reversed: true,
+      labels: {
+        step: 1,
+        style: {
+          fontSize: 14
+        }
+      }
+    },
+
+    colorAxis: {
+      /*min: 0,
+      minColor: '#FFFFFF',
+      maxColor: Highcharts.getOptions().colors[0],*/
+      dataClasses: [{
+        from: 0,
+        to: 50,
+        color: 'rgb(192,0,0)'
+      }, {
+        from: 50,
+        to: 100,
+        color: 'rgb(254,199,31)'
+      }, {
+        from: 100,
+        to: 150,
+        color: 'rgb(0,176,80)'
+      }]
+    },
+
+    legend: {
+      align: 'right',
+      layout: 'vertical',
+      margin: 0,
+      verticalAlign: 'top',
+      y: 23,
+      symbolHeight: 10
+    },
+
+    tooltip: {
+      formatter: function () {
+        var xText = getPointCategoryName(this.point, 'x');
+        var yText = getPointCategoryName(this.point, 'y');
+        if (xText == 1)
+          xText = xText + 'st ';
+        else if (xText == 2)
+          xText = xText + 'nd ';
+        else
+          xText = xText + 'th ';
+        return '<b>' + xText + yText + '</b><br>' +
+          this.point.value + '</b> units';
+      }
+    },
+
+    series: [{
+      name: 'Traffic per day',
+      borderWidth: 1,
+      data: data,
+      dataLabels: {
+        enabled: false,
+        color: '#000000'
+      }
+    }],
+
+    responsive: {
+      rules: [{
+        condition: {
+          maxWidth: 500
+        },
+        chartOptions: {
+          yAxis: {
+            labels: {
+              formatter: function () {
+                return this.value.charAt(0);
+              }
+            }
+          }
+        }
+      }]
+    }
+
+  });
+}

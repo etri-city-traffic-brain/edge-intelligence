@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://vjs.zencdn.net/7.3.0/video-js.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+  <title>deck.gl Example</title>
+
+  <style>
+    body {margin: 0; font-family: sans-serif; width: 100vw; height: 100vh; overflow: hidden;}
+    .tooltip {pointer-events: none; position: absolute; z-index: 9; font-size: 12px; padding: 8px; background: #000; color: #fff; min-width: 160px; max-height: 240px; overflow-y: hidden;}
+  </style>
+</head>
+<body>
+<div id="app"></div>
+</body>
+<script src="https://cdn.osmbuildings.org/4.0.0/OSMBuildings.js"></script>
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript">
+  App.renderToDOM(document.getElementById('app'));
+</script>
+</html>
