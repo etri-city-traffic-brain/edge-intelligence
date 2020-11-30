@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2194D57E-2286-4A52-A268-61C81B7F6428}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SetupSmartCross</RootNamespace>
+    <AssemblyName>SetupSmartCross</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>스마트교통메인.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DataBaseControl">
+      <HintPath>dll\DataBaseControl.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v14.1" />
+    <Reference Include="DevExpress.Data.v14.1" />
+    <Reference Include="DevExpress.Printing.v14.1.Core, Version=14.1.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v14.1" />
+    <Reference Include="DevExpress.Sparkline.v14.1.Core" />
+    <Reference Include="DevExpress.XtraBars.v14.1, Version=14.1.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v14.1" />
+    <Reference Include="DevExpress.XtraGrid.v14.1, Version=14.1.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v14.1, Version=14.1.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v14.1, Version=14.1.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v14.1, Version=14.1.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=8.0.15.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="RexControl">
+      <HintPath>dll\RexControl.dll</HintPath>
+    </Reference>
+    <Reference Include="RexMapControl">
+      <HintPath>dll\RexMapControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>dll\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\CommonFunction.cs" />
+    <Compile Include="Common\CustomProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\IniControl.cs" />
+    <Compile Include="Common\IniData.cs" />
+    <Compile Include="Common\LogControl.cs" />
+    <Compile Include="DataBase\CCamAccessInfo.cs" />
+    <Compile Include="DataBase\CCamInfo.cs" />
+    <Compile Include="DataBase\CodeInfo.cs" />
+    <Compile Include="DataBase\CrossInfo.cs" />
+    <Compile Include="DataBase\LoadData.cs" />
+    <Compile Include="DataBase\LocalGroupInfo.cs" />
+    <Compile Include="DataBase\MariaSQL.cs" />
+    <Compile Include="Diagnostics\CPU.cs" />
+    <Compile Include="Diagnostics\Memory.cs" />
+    <Compile Include="IconKey.cs" />
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\ManageCross.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage\ManageCross.designer.cs">
+      <DependentUpon>ManageCross.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\ManageCrossAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage\ManageCrossAdd.designer.cs">
+      <DependentUpon>ManageCrossAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\ManageCrossCamera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage\ManageCrossCamera.designer.cs">
+      <DependentUpon>ManageCrossCamera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\ManageGroupAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage\ManageGroupAdd.designer.cs">
+      <DependentUpon>ManageGroupAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\ManageUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage\ManageUser.designer.cs">
+      <DependentUpon>ManageUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\ManageUserAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage\ManageUserAdd.designer.cs">
+      <DependentUpon>ManageUserAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\ManageUserGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage\ManageUserGroup.designer.cs">
+      <DependentUpon>ManageUserGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\ManageUserGroupAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage\ManageUserGroupAdd.designer.cs">
+      <DependentUpon>ManageUserGroupAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MV.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Setup\SetupSystem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\SetupSystem.designer.cs">
+      <DependentUpon>SetupSystem.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage\ManageCross.resx">
+      <DependentUpon>ManageCross.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage\ManageCrossAdd.resx">
+      <DependentUpon>ManageCrossAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage\ManageCrossCamera.resx">
+      <DependentUpon>ManageCrossCamera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage\ManageGroupAdd.resx">
+      <DependentUpon>ManageGroupAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage\ManageUser.resx">
+      <DependentUpon>ManageUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage\ManageUserAdd.resx">
+      <DependentUpon>ManageUserAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage\ManageUserGroup.resx">
+      <DependentUpon>ManageUserGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage\ManageUserGroupAdd.resx">
+      <DependentUpon>ManageUserGroupAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Setup\SetupSystem.resx">
+      <DependentUpon>SetupSystem.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="dll\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="스마트교통메인.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
