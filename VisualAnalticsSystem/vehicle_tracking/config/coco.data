@@ -1,5 +1,0 @@
-classes= 80
-train=data/train.txt
-valid=data/valid.txt
-names=config/coco.names
-backup=backup/
