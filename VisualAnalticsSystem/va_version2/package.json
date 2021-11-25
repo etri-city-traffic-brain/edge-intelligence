@@ -17,7 +17,7 @@
     "react-image": "^4.0.3",
     "react-interval": "^2.1.1",
     "react-map-gl": "^5.0.0",
-    "video.js": "^7.8.4"
+    "video.js": "^7.14.3"
   },
   "devDependencies": {
     "@babel/core": "^7.4.0",
