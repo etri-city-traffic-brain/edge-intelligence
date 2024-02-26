@@ -8,11 +8,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
-using RexMapControl;
+using RexMapControl2;
 using SetupSmartCross.DataBase;
 using Common;
-using RexMapControl.Object;
-using RexMapControl.Section;
+using RexMapControl2.Object;
+using RexMapControl2.Section;
 
 namespace SetupSmartCross.Forms
 {

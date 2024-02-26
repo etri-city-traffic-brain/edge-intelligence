@@ -10,12 +10,13 @@ using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using Common;
 using SetupSmartCross.DataBase;
-using RexMapControl;
-using RexMapControl.Object;
+using RexMapControl2;
+using RexMapControl2.Object;
 using DevExpress.XtraGrid.Views.Grid.ViewInfo;
 using DevExpress.XtraGrid;
 using DevExpress.XtraGrid.Columns;
 using OsmSharp.Routing;
+using Itinero;
 
 namespace SetupSmartCross.Forms
 {
@@ -637,37 +638,21 @@ namespace SetupSmartCross.Forms
 
                 if (StartInfo != null && EndInfo != null && StartInfo.X > 0 && StartInfo.Y > 0 && EndInfo.X > 0 && EndInfo.Y > 0)
                 {
-                    var waypointroute = _MapControl.GetPathCalculate(StartInfo.X, StartInfo.Y, EndInfo.X, EndInfo.Y);
-                    if (waypointroute != null)
+                    var car = Itinero.Osm.Vehicles.Vehicle.Car.Shortest();
+                    var route = _MapControl.GetPathCalculate(StartInfo.X, StartInfo.Y, EndInfo.X, EndInfo.Y, car);
+
+                    if (route != null)
                     {
-                        RouteSegment seg1 = null;
-
-                        for (int j = 0; j < waypointroute.Segments.Length; j++)
+                        Itinero.LocalGeo.Coordinate shape1 = new Itinero.LocalGeo.Coordinate();
+                        for (int j = 0; j < route.Shape.Length; j++)
                         {
-                            var seg = waypointroute.Segments[j];
+                            var shape = route.Shape[j];
 
-                            if (j % 3 == 0)
+                            CommonFunction.SimpleInvoke(this, () =>
                             {
-                                CommonFunction.SimpleInvoke(this, () =>
-                                {
-                                    _MapControl.AddPathPoint(_ObjectLayerPathKey, string.Format("Path{0}", _PathPointIndex++), seg.Longitude, seg.Latitude, false, false, null, null, null, null, System.Windows.Visibility.Collapsed, MoveObjectCaptionText, System.Windows.Visibility.Visible);
-                                });
-                                seg1 = seg;
-                            }
-                            else if (seg1 != null)
-                            {
-                                double x = Math.Abs(seg1.Longitude - seg.Longitude);
-                                double y = Math.Abs(seg1.Latitude - seg.Latitude);
-
-                                if(x + y > 0.001)
-                                {
-                                    CommonFunction.SimpleInvoke(this, () =>
-                                    {
-                                        _MapControl.AddPathPoint(_ObjectLayerPathKey, string.Format("Path{0}", _PathPointIndex++), seg.Longitude, seg.Latitude, false, false, null, null, null, null, System.Windows.Visibility.Collapsed, MoveObjectCaptionText, System.Windows.Visibility.Visible);
-                                    });
-                                    seg1 = seg;
-                                }
-                            }
+                                _MapControl.AddPathPoint(_ObjectLayerPathKey, string.Format("Path{0}", _PathPointIndex++), shape.Longitude, shape.Latitude, false, false, null, null, null, null, System.Windows.Visibility.Collapsed, MoveObjectCaptionText, System.Windows.Visibility.Visible);
+                            });
+                            shape1 = shape;
                         }
                     }
                    

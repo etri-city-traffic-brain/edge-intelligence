@@ -11,10 +11,10 @@ using DevExpress.XtraEditors;
 using DevExpress.XtraTreeList.Nodes;
 using SetupSmartCross.DataBase;
 using DevExpress.XtraTreeList;
-using RexMapControl;
+using RexMapControl2;
 using Common;
 using System.Windows.Media.Imaging;
-using RexMapControl.Object;
+using RexMapControl2.Object;
 
 namespace SetupSmartCross.Manage
 {

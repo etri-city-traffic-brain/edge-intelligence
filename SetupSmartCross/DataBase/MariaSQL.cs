@@ -242,18 +242,40 @@ namespace SetupSmartCross.DataBase
 	                                        select cross_id as id from smarttraffic.mst_cross where cross_id = '{0}'
                                         )as c ";
 
+//        public string S_CARINFO = @"SELECT CAR_NUM,
+//                                    ROW_NUMBER() OVER(partition BY CAR_NUM ORDER BY CAR_NUM, CAP_DATE, ID) AS SEQ, T.ID, T.CROSS_ID, T.CROSS_NAME, T.CAP_DATE, T.X, T.Y,
+//                                    MAX(CROSS_RANK) over(partition by CAR_NUM) CROSS_COUNT,
+//                                    COUNT(*) over (partition by CAR_NUM) as POINT_COUNT
+//                                    FROM 
+//                                    (
+//	                                     SELECT C.ID, C.CROSS_ID, MC.NAME AS CROSS_NAME, C.CAP_DATE, C.CAR_NUM, MC.X, MC.Y,
+//	                                     CASE WHEN MC.name IS NULL THEN 0 ELSE DENSE_RANK() over (partition BY C.CAR_NUM order by C.CAR_NUM, C.CROSS_ID) END as CROSS_RANK
+//                                        FROM SMARTTRAFFIC.CARINFO AS C
+//                                        LEFT JOIN
+//                                        SMARTTRAFFIC.MST_CROSS MC
+//                                        ON C.CROSS_ID = MC.CROSS_ID
+//                                        WHERE C.CAP_DATE > '{0}'
+//                                        AND C.CAP_DATE < '{1}'
+//                                    ) as T
+//                                    ORDER BY CAR_NUM, CAP_DATE, ID";
+
         public string S_CARINFO = @"SELECT CAR_NUM,
                                     ROW_NUMBER() OVER(partition BY CAR_NUM ORDER BY CAR_NUM, CAP_DATE, ID) AS SEQ, T.ID, T.CROSS_ID, T.CROSS_NAME, T.CAP_DATE, T.X, T.Y,
                                     MAX(CROSS_RANK) over(partition by CAR_NUM) CROSS_COUNT,
                                     COUNT(*) over (partition by CAR_NUM) as POINT_COUNT
                                     FROM 
                                     (
-	                                     SELECT C.ID, C.CROSS_ID, MC.NAME AS CROSS_NAME, C.CAP_DATE, C.CAR_NUM, MC.X, MC.Y,
+	                                     SELECT C.ID, C.CROSS_ID, MC.NAME AS CROSS_NAME, C.CAP_DATE, C.CAR_NUM, MD.X, MD.Y,
 	                                     CASE WHEN MC.name IS NULL THEN 0 ELSE DENSE_RANK() over (partition BY C.CAR_NUM order by C.CAR_NUM, C.CROSS_ID) END as CROSS_RANK
                                         FROM SMARTTRAFFIC.CARINFO AS C
                                         LEFT JOIN
                                         SMARTTRAFFIC.MST_CROSS MC
                                         ON C.CROSS_ID = MC.CROSS_ID
+                                        LEFT JOIN
+                                        ( SELECT distinct C.CAM_ID, A.DIRECTION, A.X, A.Y
+                                   		FROM SMARTTRAFFIC.MST_CCAM C, SMARTTRAFFIC.MST_CCAM_ACCESS A
+                                   		WHERE C.CAM_ID = A.CAM_ID) AS MD
+                                        ON C.CAM_ID = MD.CAM_ID
                                         WHERE C.CAP_DATE > '{0}'
                                         AND C.CAP_DATE < '{1}'
                                     ) as T

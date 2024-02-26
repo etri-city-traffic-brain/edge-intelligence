@@ -1,7 +1,7 @@
 using Common;
 using RexControl;
-using RexMapControl.Object;
-using RexMapControl.Section;
+using RexMapControl2.Object;
+using RexMapControl2.Section;
 using System;
 using System.Collections;
 using System.Collections.Generic;

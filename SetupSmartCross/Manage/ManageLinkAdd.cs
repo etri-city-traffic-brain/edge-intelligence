@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using System.Collections;
-using RexMapControl.Section;
+using RexMapControl2.Section;
 using DevExpress.XtraGrid.Columns;
-using RexMapControl.Object;
+using RexMapControl2.Object;
 using DevExpress.XtraRichEdit.API.Native;
 using Common;
 
